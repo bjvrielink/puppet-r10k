@@ -59,7 +59,7 @@ class r10k::webhook::config (
     $webhook_hash  = {
       'user'                  => $user,
       'pass'                  => $pass,
-      'bind_address'          => $bind_address,
+      'bind_address'          => "${bind_address}",
       'port'                  => $port,
       'certname'              => $certname,
       'client_timeout'        => $client_timeout,
